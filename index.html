@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="dmdMixScroll.css" />
+	<style>
+		.page {
+			font-size: 30px;
+			text-align: center;
+		}
+		.p1 { background-color: #F00; }
+		.p2 { background-color: #900; }
+		.p3 { background-color: #500; }
+		.p4 { background-color: #050; }
+		.p5 { background-color: #090; }
+		.p6 { background-color: #0F0; }
+		.p7 { background-color: #00F; }
+		.p8 { background-color: #009; }
+		.p9 { background-color: #005; }
+		.p10 { background-color: #550; }
+		.p11 { background-color: #990; }
+		.p12 { background-color: #FF0; }
+		.p13 { background-color: #F0F; }
+		.p14 { background-color: #909; }
+		.menu {
+			position: absolute;
+			left: 50px;
+			top: 50px;
+		}
+		.menu a {
+			display: inline-block;
+			width: 50px;
+			height: 30px;
+			background-color: #FFF;
+			font-size: 10px;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript" src="dmdMixScroll.js"></script>
+</head>
+<body>
+
+	<div id="dmdContainer">
+		<div class="section page p1" data-anchor="link-f1">F1</div>
+		<div class="section">
+			<div class="left page p2">L1</div>
+			<div class="right page p3">R1</div>
+			<div class="left page p4">L2</div>
+			<div class="right page p5">R2</div>
+			<div class="left page p6" data-nostop="true">L3</div>
+			<div class="right page p7">R3</div>
+			<div class="left page p2">L4</div>
+			<div class="right page p3">R4</div>
+			<div class="left page p4">L5</div>
+			<div class="right page p5">R5</div>
+			<div class="left page p6">L6</div>
+			<div class="right page p7">R6</div>
+		</div>
+		<div class="section page p8" data-anchor="link-f2">F2</div>
+		<div class="section">
+			<div class="up page p9" data-nostop="true">U1</div>
+			<div class="down page p10">D1</div>
+			<div class="up page p11">U2</div>
+			<div class="down page p12">D2</div>
+			<div class="up page p13">U3</div>
+			<div class="down page p14">D3</div>
+		</div>
+		<div class="section page p8">F3</div>
+		<div class="section">
+			<div class="left page p2">L31</div>
+			<div class="right page p3">R31</div>
+			<div class="left page p4">L32</div>
+			<div class="right page p5" data-anchor="link-r32">R32</div>
+			<div class="left page p6">L33</div>
+			<div class="right page p7">R33</div>
+		</div>
+	</div>
+
+	<div class="menu">
+		<a href="#link-f1">Goto F1</a>
+		<a href="#link-f2">Goto F2</a>
+		<a href="#link-r32">GOTO R32</div>
+	</div>
+	<script type="text/javascript">
+	mixScroll({
+		scrollingSpeed: 700,  // default is 1000
+		easing: 'ease',  //ease | linear | ease-in | ease-out |ease-in-out  default is ''
+		minWidth: 900, // default is 600
+	});
+	</script>
+</body>
+</html>
