@@ -7,12 +7,17 @@
 **How it works**
 
 Add this 2 lines to the header of your html:
-  &lt;link rel="stylesheet" type="text/css" href="MixScroll.css" /&gt;
+
+	&lt;link rel="stylesheet" type="text/css" href="MixScroll.css" /&gt;
+	
 	&lt;script type="text/javascript" src="MixScroll.js"&gt;&lt;/script&gt;
 
 Add this script at the end of the body of your html:
-  &lt;script type="text/javascript"&gt;
-  	mixScroll();
+
+&lt;script type="text/javascript"&gt;
+
+	mixScroll();
+	
 &lt;/script&gt;
 
 For a simple scroll down page:
